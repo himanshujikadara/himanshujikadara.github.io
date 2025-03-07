@@ -1,7 +1,5 @@
-User-agent: Googlebot
-Disallow: /nogooglebot/
-
 User-agent: *
 Allow: /
+Disallow:
 
 Sitemap: https://himanshujikadara.github.io/sitemap.xml
