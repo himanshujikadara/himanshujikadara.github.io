@@ -1,611 +1,404 @@
 <!DOCTYPE html>
-<html lang="en" class="no-js" >
+<html lang="en" class="scroll-smooth">
 <head>
-
-    <!-- Character Encoding -->
     <meta charset="UTF-8">
-
-    <!-- Mobile Optimization -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <!-- Description for SEO -->
-    <meta name="description" content="Himanshu Jikadara is an AWS Certified Solutions Architect and Certified ScrumMaster® with over 20 years of experience delivering scalable, secure, and high-performance AI-powered digital solutions.">
-
-    <!-- Keywords for SEO -->
-    <meta name="keywords" content="AWS Certified Solutions Architect, Certified ScrumMaster, Cloud Architecture, Web Development, Agile Project Management, AI-powered Digital Solutions, Himanshu Jikadara">
-
-    <!-- Author of the page -->
-    <meta name="author" content="Himanshu Jikadara">
-
-    <!-- Robots (index and follow links) -->
-    <meta name="robots" content="index, follow">
-
-    <!-- Compatibility with older browsers -->
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-
-    <!-- Open Graph Meta Tags (For Facebook, LinkedIn, etc.) -->
-    <meta property="og:title" content="Himanshu Jikadara - AWS Certified Solutions Architect, Certified ScrumMaster® (CSM®) & Mentor.">
-    <meta property="og:description" content="Explore the expertise of Himanshu Jikadara, an AWS Certified Solutions Architect, Certified ScrumMaster, and web development expert with over 20 years of experience.">
-    <meta property="og:image" content="https://himanshujikadara.github.io/images/intro-bg.jpg"> <!-- Add your image URL -->
-    <meta property="og:url" content="https://himanshujikadara.github.io/index.html">
-    <meta property="og:type" content="website">
-
-    <!-- Twitter Card Meta Tags -->
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Himanshu Jikadara - AWS Certified Solutions Architect, Certified ScrumMaster® (CSM®) & Mentor.">
-    <meta name="twitter:description" content="Explore the expertise of Himanshu Jikadara, an AWS Certified Solutions Architect, Certified ScrumMaster, and web development expert with over 20 years of experience.">
-    <meta name="twitter:image" content="https://himanshujikadara.github.io/images/intro-bg.jpg"> <!-- Add your image URL -->
-    <meta name="twitter:url" content="https://himanshujikadara.github.io/index.html">
-
-    <!-- Page Title -->
-
-    <title>Himanshu Jikadara - AWS Certified Solutions Architect, Certified ScrumMaster® (CSM®) & Mentor. Expert in AI-powered Tech Project Delivery.</title>
-    <script>
-        document.documentElement.classList.remove('no-js');
-        document.documentElement.classList.add('js');
-    </script>
-
-    <!-- CSS
-    ================================================== -->
-    <link rel="stylesheet" href="css/vendor.css">
-    <link rel="stylesheet" href="css/styles.css">
-
-    <!-- favicons
-    ================================================== -->
+    
+    <title>Himanshu Jikadara | Founder, AWS Solutions Architect & Tech Mentor</title>
+    <meta name="title" content="Himanshu Jikadara | Founder, AWS Solutions Architect & Tech Mentor">
+    <meta name="description" content="20+ years of engineering excellence. Bridging the gap between complex AWS Solutions Architecture, AI Integration, and business growth with a founder's mindset.">
+    <meta name="keywords" content="AWS Solutions Architect, Fractional CTO, Technical Project Manager, ScrumMaster, AI Integration, Tech Mentor, Himanshu Jikadara, Canada Tech Consultant">
+    
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
     <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
-    <link rel="manifest" href="site.webmanifest">
-    <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-XT1SZJXHFB"></script>
-    <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
 
-    gtag('config', 'G-XT1SZJXHFB');
-    </script>
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://himanshujikadara.github.io/">
+    <meta property="og:title" content="Himanshu Jikadara | Founder & AWS Solutions Architect">
+    <meta property="og:description" content="Scaling business vision with 20+ years of technical leadership. Book a free 30-minute strategy call.">
+    <meta property="og:image" content="images/intro-bg.jpg">
 
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;600;800&display=swap" rel="stylesheet">
+    
+    <style>
+        body { font-family: 'Plus Jakarta Sans', sans-serif; background-color: #050505; color: #ffffff; }
+        .gradient-text { background: linear-gradient(90deg, #6366f1, #a855f7, #ec4899); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+        .bento-card { background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(255, 255, 255, 0.08); backdrop-filter: blur(12px); transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1); }
+        .bento-card:hover { border-color: rgba(99, 102, 241, 0.4); background: rgba(255, 255, 255, 0.05); transform: translateY(-8px); }
+        .cta-glow { box-shadow: 0 0 20px rgba(79, 70, 229, 0.4); animation: pulse-glow 2s infinite; }
+        @keyframes pulse-glow { 0%, 100% { box-shadow: 0 0 5px rgba(79, 70, 229, 0.4); } 50% { box-shadow: 0 0 25px rgba(79, 70, 229, 0.7); } }
+        .glow-bg { position: absolute; filter: blur(120px); z-index: -1; border-radius: 50%; }
+        @keyframes scroll { 0% { transform: translateX(0); } 100% { transform: translateX(-50%); } }
+        .animate-scroll { display: flex; width: max-content; animation: scroll 30s linear infinite; }
+        .animate-spin-slow { animation: spin 12s linear infinite; }
+        @keyframes spin { from { transform: rotate(0deg); } to { transform: rotate(360deg); } }
+    </style>
 </head>
+<body class="antialiased overflow-x-hidden">
 
+    <div class="glow-bg bg-indigo-600/20 w-[600px] h-[600px] -top-40 -left-40"></div>
+    <div class="glow-bg bg-purple-600/10 w-[500px] h-[500px] top-1/2 right-0"></div>
 
-<body id="top">
-
-    
-    <!-- preloader
-    ================================================== -->
-    <div id="preloader">
-        <div id="loader" class="dots-fade">
-            <div></div>
-            <div></div>
-            <div></div>
+    <nav class="fixed top-6 left-0 right-0 z-50 px-4">
+        <div class="max-w-6xl mx-auto flex justify-between items-center bg-black/60 border border-white/10 rounded-2xl px-6 py-3 backdrop-blur-lg">
+            <div class="font-extrabold text-xl tracking-tighter uppercase">HIMANSHU<span class="text-indigo-500">.J</span></div>
+            <div class="hidden md:flex gap-8 text-sm font-medium text-gray-400">
+                <a href="#about" class="hover:text-white transition">Founder Journey</a>
+                <a href="#expertise" class="hover:text-white transition">Expertise</a>
+                <a href="#process" class="hover:text-white transition">Method</a>
+                <a href="#mentoring" class="hover:text-white transition">Mentorship</a>
+            </div>
+            <a href="https://calendly.com/himanshu-jikadara/30min" target="_blank" class="cta-glow bg-indigo-600 hover:bg-indigo-500 text-white px-5 py-2.5 rounded-xl text-[10px] md:text-xs font-bold transition-all uppercase tracking-wider">
+                FREE 30-MIN STRATEGY CALL
+            </a>
         </div>
-    </div>
+    </nav>
 
+    <section class="relative pt-48 pb-20 px-6">
+        <div class="max-w-5xl mx-auto text-center">
+            <div class="inline-flex items-center gap-3 px-4 py-2 rounded-full border border-white/10 bg-white/5 text-gray-300 text-xs font-bold uppercase tracking-widest mb-8">
+                <span class="relative flex h-2 w-2">
+                    <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-indigo-400 opacity-75"></span>
+                    <span class="relative inline-flex rounded-full h-2 w-2 bg-indigo-500"></span>
+                </span>
+                Ex-Founder • AWS Solutions Architect • Scrum Master
+            </div>
 
-    <!-- page wrap
-    ================================================== -->
-    <div id="page" class="s-pagewrap ss-home">
+            <h1 class="text-5xl md:text-8xl font-extrabold tracking-tight mb-8 leading-[1.1]">
+                Scale Your Vision with a <span class="gradient-text">Founder's Edge.</span>
+            </h1>
+            <p class="text-lg md:text-xl text-gray-400 max-w-3xl mx-auto mb-12 leading-relaxed">
+                20+ years of engineering excellence and entrepreneurial grit. I bridge the gap between complex Cloud Architecture and sustainable business growth.
+            </p>
+            
+            <div class="flex flex-col items-center gap-6">
+                <a href="https://calendly.com/himanshu-jikadara/30min" target="_blank" class="group relative px-10 py-5 bg-white text-black hover:bg-indigo-600 hover:text-white rounded-2xl font-black transition-all text-xl flex items-center justify-center gap-3 cta-glow">
+                    Get My Free 30-Min Strategy Call
+                    <span class="group-hover:translate-x-2 transition-transform">→</span>
+                </a>
+                <div class="flex flex-wrap justify-center gap-4 text-[10px] font-bold text-gray-500 uppercase tracking-widest">
+                    <span>CEO-to-CEO Strategy</span>
+                    <span class="hidden md:block w-1 h-1 bg-gray-700 rounded-full my-auto"></span>
+                    <span>No-Obligation Consultation</span>
+                </div>
+            </div>
+        </div>
+    </section>
 
+    <section id="clients" class="py-16 border-y border-white/5 bg-white/[0.01]">
+        <div class="max-w-7xl mx-auto px-6">
+            <p class="text-center text-[10px] font-black tracking-[0.4em] text-gray-600 uppercase mb-10">Trusted by Global Organizations</p>
+            <div class="grid grid-cols-2 md:grid-cols-5 gap-12 items-center justify-items-center opacity-30 hover:opacity-100 transition-all duration-700 font-bold text-lg uppercase">
+                <span>Gov of Canada</span>
+                <span>Hungama</span>
+                <span>Immigrate</span>
+                <span>Wayfinder</span>
+                <span>Starberry</span>
+            </div>
+        </div>
+    </section>
 
-        <!-- # site header 
-        ================================================== -->
-        <header class="s-header">
+    <section class="py-12 overflow-hidden bg-black/40 border-y border-white/5">
+        <div class="animate-scroll whitespace-nowrap">
+            <div class="flex gap-16 px-8 items-center">
+                <span class="text-gray-500 font-bold text-lg uppercase tracking-widest">AWS</span>
+                <span class="text-gray-500 font-bold text-lg uppercase tracking-widest">Python</span>
+                <span class="text-gray-500 font-bold text-lg uppercase tracking-widest">Angular</span>
+                <span class="text-gray-500 font-bold text-lg uppercase tracking-widest">Node.js</span>
+                <span class="text-gray-500 font-bold text-lg uppercase tracking-widest">Terraform</span>
+                <span class="text-gray-500 font-bold text-lg uppercase tracking-widest">Docker</span>
+                <span class="text-gray-500 font-bold text-lg uppercase tracking-widest">Generative AI</span>
+                <span class="text-gray-500 font-bold text-lg uppercase tracking-widest">Bedrock</span>
+            </div>
+            <div class="flex gap-16 px-8 items-center">
+                <span class="text-gray-500 font-bold text-lg uppercase tracking-widest">AWS</span>
+                <span class="text-gray-500 font-bold text-lg uppercase tracking-widest">Python</span>
+                <span class="text-gray-500 font-bold text-lg uppercase tracking-widest">Angular</span>
+                <span class="text-gray-500 font-bold text-lg uppercase tracking-widest">Node.js</span>
+                <span class="text-gray-500 font-bold text-lg uppercase tracking-widest">Terraform</span>
+                <span class="text-gray-500 font-bold text-lg uppercase tracking-widest">Docker</span>
+                <span class="text-gray-500 font-bold text-lg uppercase tracking-widest">Generative AI</span>
+                <span class="text-gray-500 font-bold text-lg uppercase tracking-widest">Bedrock</span>
+            </div>
+        </div>
+    </section>
 
-            <div class="row s-header__inner width-sixteen-col">
-
-                <div class="s-header__block">
-                    <div class="s-header__logo">
-                        <a class="logo" href="index.html">
-                            <img src="images/himanshuj-logo.svg" alt="Homepage">
-                        </a>
-                    </div>
-
-                    <a class="s-header__menu-toggle" href="#0"><span>Menu</span></a>
-                </div> <!-- end s-header__block -->
-
-                <nav class="s-header__nav">
-    
-                    <ul class="s-header__menu-links">
-                        <li><a href="about.html">About</a></li>
-                        <li><a href="services.html">Services</a></li>
-                        <!--li><a href="blog.html">Blog</a></li-->
-                        <li><a href="contact.html">Contact</a></li>
-                    </ul> <!-- s-header__menu-links -->
-
-                    <div class="s-header__contact">
-                        <a href="https://calendly.com/himanshu-jikadara/30min" target="_blank" class="btn btn--primary s-header__contact-btn">Get Expert Advise</a>
-                        <div style="color:white; font-style: italic;font-size: 12px;">30 minutes free call. No string attached.</div>                        
-                    </div> <!-- s-header__contact -->
-    
-                </nav> <!-- end s-header__nav -->
-
-            </div> <!-- end s-header__inner -->
-
-        </header> <!-- end s-header -->
-
-
-        <!-- # site main content
-        ================================================== -->
-        <section id="content" class="s-content">
-
-            <!-- intro
-            ----------------------------------------------- -->
-            <section id="intro" class="s-intro">
-
-                <div class="row s-intro__content width-sixteen-col">
-
-                    <div class="column lg-12 s-intro__content-inner grid-block">
-                        
-                        <div class="s-intro__content-text">
-                            <div class="s-intro__content-pretitle text-pretitle">Hello, I'm Himanshu Jikadara</div>
-                            <h1 class="s-intro__content-title">
-                            I create AI-powered <br>
-                            solutions for your <br>
-                            business that get <br>
-                            digital success.
-                            </h1>
-                        </div> <!-- s-intro__content-text -->
-
-                        <div class="s-intro__content-media"> 
-                            <div class="s-intro__content-media-inner">                               
-                                <img src="images/intro-bg.jpg" srcset="images/intro-bg.jpg 1x, images/intro-bg@2x.jpg 2x" alt="">
-                                <div class="lines">                               
-                                    <span></span>                                  
-                                </div>
-                            </div>
-                        </div> <!-- s-intro__content-media -->                      
-
-                        <div class="s-intro__scroll-down">
-                            <a href="#about" class="smoothscroll">
-                                <div class="scroll-icon">
-                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="36" height="36" fill="none" stroke="#97b34a" stroke-width="1" stroke-linecap="round" stroke-linejoin="round">&lt;!--!  Atomicons Free 1.00 by @atisalab License - https://atomicons.com/license/ (Icons: CC BY 4.0) Copyright 2021 Atomicons --&gt;<polyline points="7 13 12 18 17 13"></polyline><line x1="12" y1="18" x2="12" y2="6"></line></svg>
-                                </div>
-                                <span>Scroll for more</span>
-                            </a>
-                        </div> <!-- s-intro__scroll-down -->
-                        
-                    </div> <!-- s-intro__content-inner -->
-
-                </div> <!-- s-intro__content -->
-
-            </section> <!-- end s-intro -->
-
-            <!-- about
-            ----------------------------------------------- -->
-            <section id="about" class="s-about target-section">
-
-                <div class="row s-about__content width-sixteen-col">
-                    <div class="column grid-block grid-section-split">
-
-                        <img src="images/geometric_shape.svg" alt="" class="s-about__content-imgbg">
-
-                        <div class="section-header grid-section-split__header">
-                            <div class="text-pretitle">About</div>                           
-                            <h2 class="text-display-title">
-                                AWS Certified Solutions Architect, ScrumMaster & Mentor. 
-                                Expert in AI-powered Tech Project Delivery.
-                            </h2>                           
-                        </div> <!-- end section-header -->
-
-                        <div class="s-about__content-main grid-section-split__primary">
-                            <p class="attention-getter">
-                                I am an AWS Certified Solutions Architect and Certified ScrumMaster® (CSM®) 
-                                with over 20 years of experience in system analysis, project management, 
-                                and web development. Originally from India and currently based in Canada, 
-                                I have had the privilege of working with clients across Canada, the USA, 
-                                Europe, and Hong Kong. My diverse skill set enables me to deliver AI-powered, innovative, 
-                                results-driven solutions that help businesses optimize their digital strategies 
-                                and systems.
-                            </p>
-
-                            <p class="attention-getter">
-                                With a strong background in agile methodologies and software engineering, 
-                                I specialize in leading technical projects from planning through execution. 
-                                My focus is on delivering high-quality results while fostering cross-functional 
-                                team collaboration and effective communication. Whether it's project planning, 
-                                technical execution, or user training, I ensure seamless delivery and client 
-                                satisfaction.
-                            </p>
-
-                            <p class="attention-getter">
-                                Whether you need a Technical Project Manager, Solutions Architect, 
-                                Fractional CTO, Full Stack Developer, Software Engineer, or ScrumMaster®, 
-                                I bring the expertise to build high-performing websites, applications, and 
-                                products. I’m also available for consultation or mentoring opportunities, 
-                                aiming to empower individuals and organizations to grow and succeed. 
-                                Let’s connect and work together to drive your business or cause forward.
-                            </p>
-                        </div> <!-- end s-about__content-main -->
-
-                        <div class="s-about__content-btn grid-section-split__bottom">
-                            <a href="about.html" class="btn btn--stroke u-fullwidth">More About Me</a>
-
-                            <ul class="s-about__social social-list">
-                                <li>
-                                    <a href="https://www.linkedin.com/in/himanshu-jikadara" target="_blank">
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 16 16" style="fill: rgba(0, 0, 0, 1);"><path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854zm4.943 12.248V6.169H2.542v7.225zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248S2.4 3.226 2.4 3.934c0 .694.521 1.248 1.327 1.248zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016l.016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225z"></path></svg>
-                                        <span class="u-screen-reader-text">LinkedIn</span>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="https://x.com/hims_jikadara" target="_blank">
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 16 16" style="fill:rgba(0, 0, 0, 1);"><path d="M12.6.75h2.454l-5.36 6.142L16 15.25h-4.937l-3.867-5.07-4.425 5.07H.316l5.733-6.57L0 .75h5.063l3.495 4.633L12.601.75Zm-.86 13.028h1.36L4.323 2.145H2.865z"></path></svg>
-                                        <span class="u-screen-reader-text">X</span>
-                                    </a>
-                                </li>                                
-                            </ul> <!-- end s-footer__social -->
-                        </div> <!-- end s-about__content-btn -->
+    <section id="about" class="max-w-7xl mx-auto px-6 py-24 border-t border-white/5">
+        <div class="grid md:grid-cols-2 gap-16 items-center">
+            
+            <div class="relative group order-2 md:order-1">
+                <div class="absolute -inset-4 bg-gradient-to-r from-indigo-500/20 to-purple-600/20 rounded-[3.5rem] blur-2xl group-hover:opacity-100 transition duration-1000 opacity-50"></div>
+                
+                <div class="relative bento-card rounded-[3rem] overflow-hidden aspect-[4/5] md:aspect-square lg:aspect-[4/5]">
+                    <img src="images/intro-bg.jpg" alt="Himanshu Jikadara" 
+                        class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-700 scale-105 group-hover:scale-100">
                     
-                    </div> <!-- content-inner -->
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent"></div>
+                    
+                    <div class="absolute bottom-8 left-8 right-8 p-6 bg-black/40 backdrop-blur-md border border-white/10 rounded-2xl">
+                        <p class="text-white font-bold text-sm tracking-tight">Himanshu Jikadara</p>
+                        <p class="text-indigo-400 text-[10px] uppercase font-black tracking-[0.2em] mt-1">AWS Solutions Architect, Scrum Master & Ex-Founder</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="order-1 md:order-2">
+                <h2 class="text-4xl font-bold mb-6 text-white">A Global Journey. <br/><span class="text-indigo-500">A Founder's Mindset.</span></h2>
+                <p class="text-gray-400 text-lg leading-relaxed mb-8">
+                    Originally from **India** and now based in **Canada**, I have spent two decades building products from the ground up.
+                </p>
+                <p class="text-gray-500 mb-8">
+                    As a **Founder**, I don't just build features; I solve business problems. I treat your infrastructure with the same urgency and ROI-focus that I apply to my own ventures.
+                </p>
+                
+                <div class="grid grid-cols-3 gap-4 text-center mb-10">
+                    <div class="p-4 bento-card rounded-2xl">
+                        <p class="text-2xl font-bold text-white">20+</p>
+                        <p class="text-[9px] text-gray-500 uppercase font-black tracking-widest mt-1 text-center">Years</p>
+                    </div>
+                    <div class="p-4 bento-card rounded-2xl border-indigo-500/20">
+                        <p class="text-2xl font-bold text-indigo-400">Founder</p>
+                        <p class="text-[9px] text-gray-500 uppercase font-black tracking-widest mt-1 text-center">Grit</p>
+                    </div>
+                    <div class="p-4 bento-card rounded-2xl">
+                        <p class="text-2xl font-bold text-white">Global</p>
+                        <p class="text-[9px] text-gray-500 uppercase font-black tracking-widest mt-1 text-center">Impact</p>
+                    </div>
+                </div>
+
+                <div class="space-y-4">
+                    <div class="flex items-center gap-4 p-4 bento-card rounded-xl border-l-2 border-indigo-500">
+                        <p class="text-sm text-gray-300">Expertise across <span class="text-white font-bold">Canada, USA, Europe, and Hong Kong.</span></p>
+                    </div>
+                    <div class="flex items-center gap-4 p-4 bento-card rounded-xl border-l-2 border-purple-500">
+                        <p class="text-sm text-gray-300">Specialized in <span class="text-white font-bold">Fractional CTO leadership</span> for growing startups.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>    
+
+    <section id="expertise" class="max-w-7xl mx-auto px-6 py-24 border-t border-white/5">
+        <h2 class="text-4xl font-bold mb-16">Core Mastery</h2>
+        <div class="grid grid-cols-1 md:grid-cols-12 gap-6">
+            <div class="md:col-span-8 bento-card p-10 rounded-[2.5rem]">
+                <h3 class="text-3xl font-bold mb-4">AWS Solutions Architecture</h3>
+                <p class="text-gray-400 text-lg leading-relaxed">Scaling infrastructures for high-availability. My designs are built for the cloud-native era, focusing on security, cost-optimization, and zero-downtime migrations.</p>
+            </div>
+            <div class="md:col-span-4 bento-card p-10 rounded-[2.5rem] bg-indigo-500/[0.03]">
+                <h3 class="text-2xl font-bold mb-4">Agile Delivery</h3>
+                <p class="text-gray-400">Certified ScrumMaster® leadership. I bridge the gap between stakeholders and engineers to ensure value is delivered in every sprint.</p>
+            </div>
+            <div class="md:col-span-12 bento-card p-10 rounded-[2.5rem] border-indigo-500/20 bg-gradient-to-r from-indigo-500/[0.05] to-transparent">
+                <h3 class="text-3xl font-bold mb-4 gradient-text inline-block">AI Integration & Strategic Discovery</h3>
+                <p class="text-gray-400 text-lg leading-relaxed">Modernizing legacy workflows through AI. I help businesses research and implement LLM-driven automation that provides a 10x competitive advantage.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="ai-deep-dive" class="max-w-7xl mx-auto px-6 py-24 border-t border-white/5">
+        <div class="flex flex-col md:flex-row justify-between items-end mb-16 gap-8">
+            <div class="max-w-2xl">
+                <div class="text-indigo-500 font-bold text-xs uppercase tracking-[0.3em] mb-4">Advanced Implementation</div>
+                <h2 class="text-4xl font-bold mb-4">Moving Beyond the <span class="text-indigo-500">AI Hype.</span></h2>
+                <p class="text-gray-500 italic">I help organizations implement functional, private, and secure AI solutions that solve real business problems.</p>
+            </div>
+            <div class="hidden md:block h-[1px] flex-grow bg-indigo-500/10 mb-6 mx-12"></div>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <div class="bento-card p-8 rounded-3xl border-l-2 border-l-indigo-500/50 relative overflow-hidden">
+                <div class="absolute -right-4 -top-4 opacity-5">
+                    <svg width="120" height="120" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1"><path d="M12 2a10 10 0 1 0 10 10A10 10 0 0 0 12 2zm0 18a8 8 0 1 1 8-8 8 8 0 0 1-8 8z"/><path d="M12 6v6l4 2"/></svg>
+                </div>
+                <h4 class="text-white font-bold text-xl mb-4">RAG & LLM Implementation</h4>
+                <p class="text-sm text-gray-500 leading-relaxed mb-6">Integrating GPT-4 or Claude with your private data using Retrieval-Augmented Generation (RAG) for accurate, hallucination-free business intelligence.</p>
+                <div class="flex flex-wrap gap-2">
+                    <span class="text-[9px] px-2 py-1 bg-white/5 border border-white/10 rounded text-gray-400 uppercase font-bold">Vector DBs</span>
+                    <span class="text-[9px] px-2 py-1 bg-white/5 border border-white/10 rounded text-gray-400 uppercase font-bold">Semantic Search</span>
+                </div>
+            </div>
+
+            <div class="bento-card p-8 rounded-3xl border-l-2 border-l-purple-500/50 relative overflow-hidden">
+                <div class="absolute -right-4 -top-4 opacity-5">
+                    <svg width="120" height="120" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+                </div>
+                <h4 class="text-white font-bold text-xl mb-4">AI Governance & Strategy</h4>
+                <p class="text-sm text-gray-500 leading-relaxed mb-6">Navigating the complexities of data privacy and security. I ensure your AI implementation is compliant and cost-effective from day one.</p>
+                <div class="flex flex-wrap gap-2">
+                    <span class="text-[9px] px-2 py-1 bg-white/5 border border-white/10 rounded text-gray-400 uppercase font-bold">Data Privacy</span>
+                    <span class="text-[9px] px-2 py-1 bg-white/5 rounded border border-white/10 text-gray-400 uppercase font-bold">ROI Analysis</span>
+                </div>
+            </div>
+
+            <div class="bento-card p-8 rounded-3xl border-l-2 border-l-pink-500/50 relative overflow-hidden">
+                <div class="absolute -right-4 -top-4 opacity-5">
+                    <svg width="120" height="120" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1"><path d="M21 12a9 9 0 1 1-9-9c2.52 0 4.93 1 6.74 2.74L21 8"/><path d="M21 3v5h-5"/></svg>
+                </div>
+                <h4 class="text-white font-bold text-xl mb-4">Agentic Automation</h4>
+                <p class="text-sm text-gray-500 leading-relaxed mb-6">Building autonomous AI agents that handle repetitive workflows, customer support, and research, freeing your team for higher-value work.</p>
+                <div class="flex flex-wrap gap-2">
+                    <span class="text-[9px] px-2 py-1 bg-white/5 border border-white/10 rounded text-gray-400 uppercase font-bold">Agentic Workflows</span>
+                    <span class="text-[9px] px-2 py-1 bg-white/5 border border-white/10 rounded text-gray-400 uppercase font-bold">API Ops</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="max-w-7xl mx-auto px-6 py-24 border-t border-white/5">
+        <div class="mb-16">
+            <h2 class="text-4xl font-bold mb-4">Strategic <span class="text-indigo-500">Impact.</span></h2>
+            <p class="text-gray-500">Transformative results delivered for global scale and high-precision platforms.</p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+            <div class="bento-card p-10 rounded-[2.5rem] group relative overflow-hidden">
+                <div class="flex justify-between items-start mb-6">
+                    <span class="text-[10px] font-black tracking-widest text-emerald-500 uppercase">Automation & AI Agents (Robots)</span>
+                    <span class="text-xs text-gray-600 font-bold uppercase underline decoration-emerald-500/30">Immigrate</span>
+                </div>
+                <h4 class="text-3xl font-bold mb-4 group-hover:text-emerald-400 transition">95% Reduction in Processing Time</h4>
+                <p class="text-sm text-gray-400 leading-relaxed mb-8">
+                    Revolutionized critical immigration workflows by automating PDF generation, form submissions, and Recaptcha. Integrated speech recognition to streamline applicant data entry, transforming a manual bottleneck into a high-speed digital pipeline.
+                </p>
+                <div class="flex gap-3">
+                    <span class="text-[9px] font-bold text-emerald-400/80 bg-emerald-500/5 border border-emerald-500/20 px-3 py-1 rounded-full uppercase">Speech Recognition</span>
+                    <span class="text-[9px] font-bold text-emerald-400/80 bg-emerald-500/5 border border-emerald-500/20 px-3 py-1 rounded-full uppercase">Automation</span>
+                </div>
+                <div class="absolute -right-4 -bottom-4 opacity-[0.03] text-8xl font-black italic">95%</div>
+            </div>
+
+            <div class="bento-card p-10 rounded-[2.5rem] group relative overflow-hidden">
+                <div class="flex justify-between items-start mb-6">
+                    <span class="text-[10px] font-black tracking-widest text-indigo-500 uppercase">Enterprise Modernization</span>
+                    <span class="text-xs text-gray-600 font-bold uppercase underline decoration-indigo-500/30">Hungama</span>
+                </div>
+                <h4 class="text-3xl font-bold mb-4 group-hover:text-indigo-400 transition">Infrastructure Modernization</h4>
+                <p class="text-sm text-gray-400 leading-relaxed mb-8">
+                    Led a large-scale legacy overhaul by upgrading core PHP environments and migrating mission-critical Oracle databases. Enhanced system performance and hardened security protocols to support massive concurrent user loads.
+                </p>
+                <div class="flex gap-3">
+                    <span class="text-[9px] font-bold text-indigo-400/80 bg-indigo-500/5 border border-indigo-500/20 px-3 py-1 rounded-full uppercase">Oracle Migration</span>
+                    <span class="text-[9px] font-bold text-indigo-400/80 bg-indigo-500/5 border border-indigo-500/20 px-3 py-1 rounded-full uppercase">System Security</span>
+                </div>
+                <div class="absolute -right-4 -bottom-4 opacity-[0.03] text-8xl font-black italic">DATA</div>
+            </div>
+        </div>
+    </section>
+
+    <section id="process" class="max-w-7xl mx-auto px-6 py-24 border-t border-white/5">
+        <div class="text-center mb-16">
+            <h2 class="text-4xl font-bold mb-4">The Strategic <span class="text-indigo-500">System.</span></h2>
+            <p class="text-gray-500 max-w-2xl mx-auto">A founder-led approach to engineering that prioritizes ROI and technical durability.</p>
+        </div>
+        <div class="grid md:grid-cols-3 gap-8">
+            <div class="bento-card p-8 rounded-[2rem]">
+                <div class="w-10 h-10 bg-indigo-600/10 border border-indigo-500/30 rounded-full flex items-center justify-center mb-6 text-indigo-400 font-black text-xs tracking-tighter">01</div>
+                <h3 class="text-xl font-bold mb-3 text-white">Discovery</h3>
+                <p class="text-sm text-gray-500 leading-relaxed">We audit your stack and business goals to find high-impact opportunities for Cloud or AI modernization.</p>
+            </div>
+            <div class="bento-card p-8 rounded-[2rem] border-indigo-500/30">
+                <div class="w-10 h-10 bg-indigo-600 rounded-full flex items-center justify-center mb-6 text-white font-black text-xs tracking-tighter">02</div>
+                <h3 class="text-xl font-bold mb-3 text-white">Architecture</h3>
+                <p class="text-sm text-gray-500 leading-relaxed">Custom **AWS Solutions Architect** design ensuring security, scalability, and long-term cost-optimization.</p>
+            </div>
+            <div class="bento-card p-8 rounded-[2rem]">
+                <div class="w-10 h-10 bg-indigo-600/10 border border-indigo-500/30 rounded-full flex items-center justify-center mb-6 text-indigo-400 font-black text-xs tracking-tighter">03</div>
+                <h3 class="text-xl font-bold mb-3 text-white">Execution</h3>
+                <p class="text-sm text-gray-500 leading-relaxed">Rapid, iterative delivery via Agile Scrum methodologies with full stakeholder transparency.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="mentoring" class="max-w-7xl mx-auto px-6 py-20">
+        <div class="relative overflow-hidden bento-card rounded-[3rem] p-10 md:p-20 border-indigo-500/30 border-2">
+            <div class="relative z-10 grid md:grid-cols-2 gap-16 items-center">
+                <div>
+                    <h2 class="text-4xl md:text-6xl font-extrabold mb-8 tracking-tighter">Mentorship for the <span class="text-indigo-500">AI Era.</span></h2>
+                    <div class="space-y-8">
+                        <div class="flex gap-4">
+                            <div class="text-indigo-500 font-black text-xl">01/</div>
+                            <div>
+                                <h4 class="font-bold text-white text-lg underline decoration-indigo-500 underline-offset-8">Student & Early Career Development</h4>
+                                <p class="text-sm text-gray-500 mt-2">I help newcomers navigate the complexities of modern engineering—focusing on clean code, industry standards, and landing your first role.</p>
+                            </div>
+                        </div>
+                        <div class="flex gap-4">
+                            <div class="text-indigo-500 font-black text-xl">02/</div>
+                            <div>
+                                <h4 class="font-bold text-white text-lg">Architectural Coaching</h4>
+                                <p class="text-sm text-gray-500 mt-1">Personalized roadmaps for senior developers moving into Solutions Architecture and AWS Certification.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <a href="https://calendly.com/himanshu-jikadara/30min" target="_blank" class="mt-12 inline-block bg-white text-black px-8 py-4 rounded-2xl font-bold hover:bg-indigo-600 hover:text-white transition-all shadow-xl shadow-white/5">
+                        Claim My Free Mentorship Chat
+                    </a>
+                </div>
+                <div class="relative hidden md:flex items-center justify-center">
+                    <div class="w-72 h-72 rounded-full border border-white/5 flex items-center justify-center relative">
+                         <div class="absolute inset-0 animate-spin-slow opacity-20 border-t-2 border-indigo-500 rounded-full"></div>
+                        <div class="text-center">
+                            <p class="text-gray-500 font-bold uppercase tracking-widest text-[10px] mb-2">No Ego</p>
+                            <p class="text-5xl font-black italic">1-on-1</p>
+                            <p class="text-gray-500 font-bold uppercase tracking-widest text-[10px] mt-2">Personal Growth</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="testimonials" class="max-w-7xl mx-auto px-6 py-32">
+        <h2 class="text-center text-4xl font-bold mb-16">Global Recognition</h2>
+        <div class="grid md:grid-cols-3 gap-8">
+            <div class="bento-card p-8 rounded-3xl">
+                <p class="text-gray-400 italic mb-8">"One of those rare multi-talented developers... he would be a valuable asset on any team."</p>
+                <p class="font-bold text-white">Dale Z. — <span class="text-indigo-500 text-xs">Wayfinder</span></p>
+            </div>
+            <div class="bento-card p-8 rounded-3xl border-indigo-500/30 bg-indigo-500/[0.02] scale-105">
+                <p class="text-gray-300 italic mb-8">"Dedicated and professional. Great understanding of how to deliver technical projects on budget and on time."</p>
+                <p class="font-bold text-white">Ben S. — <span class="text-indigo-500 text-xs">Starberry</span></p>
+            </div>
+            <div class="bento-card p-8 rounded-3xl">
+                <p class="text-gray-400 italic mb-8">"Excellent communication skills and a great understanding of production and management."</p>
+                <p class="font-bold text-white">Vince S. — <span class="text-indigo-500 text-xs">Tangent Design</span></p>
+            </div>
+        </div>
+    </section>
+
+    <footer class="border-t border-white/5 py-20 px-6 bg-black">
+        <section class="max-w-7xl mx-auto px-6 py-24">
+            <div class="relative overflow-hidden bento-card rounded-[3rem] p-12 md:p-24 text-center border-indigo-500/20">
+                <div class="relative z-10">
+                    <h2 class="text-4xl md:text-6xl font-extrabold mb-8 tracking-tighter">Ready to scale your <span class="gradient-text">technical vision?</span></h2>
+                    <p class="text-gray-400 text-lg md:text-xl max-w-2xl mx-auto mb-12">
+                        Whether you're looking for a Fractional CTO, a Cloud Solutions Architect, Scrum Master, Technical Project Manager or a Mentor to level up your team, let’s start with a high-value strategy session.
+                    </p>
+                    <a href="https://calendly.com/himanshu-jikadara/30min" target="_blank" class="group relative px-12 py-6 bg-white text-black hover:bg-indigo-600 hover:text-white rounded-2xl font-black transition-all text-xl inline-flex items-center gap-3 cta-glow">
+                        Book Your Strategy Call
+                        <span class="group-hover:translate-x-2 transition-transform">→</span>
+                    </a>
+                    <p class="mt-8 text-gray-600 text-xs font-bold uppercase tracking-[0.4em]">100% Confidential • No Commitment Required</p>
                 </div>
                 
-            </section> <!-- end s-about -->
-
-            <!-- expertise
-            ----------------------------------------------- -->
-            <section id="expertise" class="s-expertise">
-
-                <div class="row s-expertise__content width-sixteen-col">
-                    <div class="column xl-12 grid-block grid-section-split">
-
-                        <div class="section-header grid-section-split__header">
-                            <div class="text-pretitle">Expertise</div>                           
-                            <h2 class="text-display-title">
-                            My key areas of expertise.
-                            </h2>     
-                            
-                            <p class="lead">
-                                My area of expertise includes Cloud Architecture with AWS, 
-                                Agile Project Management, Project Research & Discovery, 
-                                and delivering scalable, secure, and high-performance,  
-                                AI-powered, digital solutions across various industries.
-                            </p>
-                        </div> <!-- end section-header -->
-
-                        <div class="s-expertise__content-main grid-section-split__primary">
-
-                            <div class="grid-list-items list-items show-ctr">
-                                <div class="grid-list-items__item list-items__item">
-                                    <div class="grid-list-items__title list-items__item-header">
-                                        <h3 class="list-items__item-title">Cloud Architecture with AWS</h3>
-                                    </div>
-                                    <div class="grid-list-items__text list-items__item-text">
-                                        <p>
-                                            With a strong background in Cloud Architecture on AWS, 
-                                            I design and deploy robust, scalable, and highly available 
-                                            cloud infrastructures that support business growth and agility.
-                                        </p>
-                                    </div>
-                                </div> <!-- list-item -->
-                                <div class="grid-list-items__item list-items__item">
-                                    <div class="grid-list-items__title list-items__item-header">
-                                        <h3 class="list-items__item-title">Agile Project Management</h3>
-                                    </div>
-                                    <div class="grid-list-items__text list-items__item-text">
-                                        <p>
-                                            As a Certified ScrumMaster® with a proven track record 
-                                            in leading teams, I specialize in Agile Project Management, 
-                                            ensuring successful project delivery through iterative 
-                                            processes, collaboration, and a focus on delivering consistent value.
-                                        </p>
-                                    </div>
-                                </div> <!-- list-expertise__item -->
-                                <div class="grid-list-items__item list-items__item">
-                                    <div class="grid-list-items__title list-items__item-header">
-                                        <h3 class="list-items__item-title">Full Stack Development</h3>
-                                    </div>
-                                    <div class="grid-list-items__text list-items__item-text">
-                                        <p>
-                                            With two decades of experience in Full Stack Development, 
-                                            I’ve worked across various tech stacks, creating robust, scalable, 
-                                            and user-centric solutions that drive business success.
-                                        </p>
-                                    </div>
-                                </div> <!-- list-expertise__item -->
-                                <div class="grid-list-items__item list-items__item">
-                                    <div class="grid-list-items__title list-items__item-header">
-                                        <h3 class="list-items__item-title">Project Research & Discovery</h3>
-                                    </div>
-                                    <div class="grid-list-items__text list-items__item-text">
-                                        <p>
-                                            I specialize in Project Research & Discovery, 
-                                            leveraging AI technologies to gather insights, 
-                                            optimize strategies, and drive informed decision-making 
-                                            for successful project outcomes.
-                                        </p>
-                                    </div>
-                                </div> <!-- list-expertise__item -->
-
-                            </div> <!-- grid-list-items -->
-                        </div> <!-- end s-expertise__content-main -->
-
-                        <div class="s-expertise__content-btn grid-section-split__bottom">
-                            <a href="services.html" class="btn btn--stroke u-fullwidth">View All Services</a>
-                        </div> <!-- end s-about__content-btn -->
-
-                    </div> <!-- end grid-block-->
-                </div> <!-- end s-expertise__content -->
-
-            </section> <!-- end s-expertise -->
-
-            <!-- clients
-            ----------------------------------------------- -->
-            <section id="clients" class="s-clients">          
-
-                <div class="row s-clients__content-block width-sixteen-col">
-                    <div class="column xl-12 grid-block grid-section-split">
-                    
-                        <div class="section-header grid-section-split__header">
-                            <div class="text-pretitle">Clients</div>                           
-                            <h2 class="text-display-title">
-                            I have had the privilege of working with these incredible organizations.
-                            </h2>       
-                        </div> <!-- end section-header -->
-                    
-                        <div class="grid-section-split__primary">
-                            <p class="lead">
-                                I have had the privilege of working with some incredible organizations, helping them navigate complex digital challenges and implement innovative solutions. Each collaboration has been an opportunity to bring my expertise in AWS architecture, agile methodologies, and full-stack development to drive measurable business results. These experiences have allowed me to work with diverse industries, from startups to established enterprises, always striving for excellence and delivering solutions that align with the unique needs of each organization.
-                            </p>   
-
-                            <p>
-                                Working with such renowned organizations has not only honed my technical skills but also deepened my understanding of the broader market dynamics and customer needs. These partnerships have reinforced my commitment to fostering long-term relationships, promoting business growth, and empowering teams to achieve their goals. I'm proud of the impact we've made together and excited for the future of continued collaboration with such forward-thinking companies.
-                            </p>
-                        </div> <!-- end grid-section-split__primary -->
-                    
-                    </div> <!-- end column -->
-                </div> <!-- end row -->
-
-                <div class="row s-clients__content-block width-sixteen-col">
-                    <div class="column xl-12">
-                    
-                        <div class="clients-list">                            
-                            <div class="clients-list__item">
-                                <a href="#">
-                                    <img src="images/clients/goc-logo.png" alt="">
-                                </a>
-                            </div>
-                            <div class="clients-list__item">
-                                <a href="#">
-                                    <img src="images/clients/ttt-logo.png" alt="">
-                                </a>
-                            </div>
-                            <div class="clients-list__item">
-                                <a href="#">
-                                    <img src="images/clients/immigrate-logo.png" alt="">
-                                </a>
-                            </div>
-                            <div class="column clients-list__item">
-                                <a href="#">
-                                    <img src="images/clients/ws-logo.png" alt="">
-                                </a>
-                            </div>
-                            <div class="clients-list__item">
-                                <a href="#">
-                                    <img src="images/clients/hungama-logo.png" alt="">
-                                </a>
-                            </div>
-                            <div class="clients-list__item">
-                                <a href="#">
-                                    <img src="images/clients/bluemark-logo.png" alt="">
-                                </a>
-                            </div>
-                            <div class="clients-list__item">
-                                <a href="#">
-                                    <img src="images/clients/sttl-logo.png" alt="">
-                                </a>
-                            </div>
-                            <div class="clients-list__item">
-                                <a href="#">
-                                    <img src="images/clients/wayfinder-logo.png" alt="">
-                                </a>
-                            </div>
-                            <div class="clients-list__item">
-                                <a href="#">
-                                    <img src="images/clients/starberry-logo.png" alt="">
-                                </a>
-                            </div>
-                            <div class="column clients-list__item">
-                                <a href="#">
-                                    <img src="images/clients/omnee-logo.png" alt="">
-                                </a>
-                            </div>
-                        </div> <!-- end clients-list -->
-
-                    </div> <!-- end column -->
-                </div> <!-- end row -->
-                                
-                <div class="row s-clients__content-block width-sixteen-col">
-                    <div class="column xl-12 testimonials">
-                    
-                        <div class="swiper-container testimonials__slider home-slider">
-
-                            <div class="swiper-wrapper">
-                                <div class="testimonials__slide swiper-slide">
-                                    <p>
-                                        I worked with Himanshu over a period of a year. 
-                                        Together we managed the development of a B2B Trading Platform from start to finish.  
-                                        It was an absolute pleasure working with Himanshu, who is extremely dedicated and professional. 
-                                        Because he has a web developer background, he also has a great understanding of how to deliver 
-                                        technical projects on budget and on time. Himanshu comes highly recommended.
-                                    </p>
-                                    <div class="testimonials__author">
-                                        <img src="images/avatars/no-profile-pic.jpg" alt="Author image" class="testimonials__avatar">
-                                        <cite class="testimonials__cite">
-                                            <strong>Ben S.</strong>
-                                            <span>Starberry</span>
-                                        </cite>
-                                    </div>
-                                </div>
-                                <div class="testimonials__slide swiper-slide">
-                                    <p>
-                                        Himanshu had a good logical understanding of customer requirements, 
-                                        hard working, good control over project and managed the team well. 
-                                        His work at silver touch was good and was a part of our Silver touch family. 
-                                        Will always be welcomed backed.
-                                    </p>
-                                    <div class="testimonials__author">
-                                        <img src="images/avatars/no-profile-pic.jpg" alt="Author image" class="testimonials__avatar">
-                                        <cite class="testimonials__cite">
-                                            <strong>Kunjan J.</strong>
-                                            <span>SilverTouch technologies</span>
-                                        </cite>
-                                    </div>
-                                </div>
-                                <div class="testimonials__slide swiper-slide">
-                                    <p>
-                                        Himanshu is one of those rare multi-talented developers that can handle anything 
-                                        you throw at him. He worked on everything from updating WordPress themes and customizing 
-                                        plugins, to optimizing our websites, to writing scripts for background tasks, 
-                                        to administrating our production database, to writing automation processes using UIPath. 
-                                        He's a good listener and a dedicated colleague who strives for a high quality product. 
-                                        He would be a valuable asset on any team.
-                                    </p>
-                                    <div class="testimonials__author">
-                                        <img src="images/avatars/no-profile-pic.jpg" alt="Author image" class="testimonials__avatar">
-                                        <cite class="testimonials__cite">
-                                            <strong>Dale Z.</strong>
-                                            <span>Wayfinder</span>
-                                        </cite>
-                                    </div>
-                                </div>
-                                <div class="testimonials__slide swiper-slide">
-                                    <p>
-                                        Himanshu was able to work on several projects at the same time, 
-                                        manage a team of people and deliver on all fronts. Many of the projects 
-                                        involved complicated cross-platform modifications and website updates and 
-                                        he always managed meet the deadline. His communication skills are excellent 
-                                        and he has a great understanding of production, management and support.
-                                    </p>
-                                    <div class="testimonials__author">
-                                        <img src="images/avatars/no-profile-pic.jpg" alt="Author image" class="testimonials__avatar">
-                                        <cite class="testimonials__cite">
-                                            <strong>Vince S.</strong>
-                                            <span>Tangent Design</span>
-                                        </cite>
-                                    </div>
-                                </div> 
-                            </div> <!-- end swiper-wrapper --> 
-
-                            <div class="swiper-pagination"></div>
-
-                        </div> <!--end testimonials__slider -->                    
-                    
-                    </div> <!-- end column -->
-                </div> <!-- end row -->
-
-
-            </section> <!-- end s-clients -->            
-
-        </section> <!-- s-content-->
-
-        <!-- # cta
-        ================================================== -->
-        <section id="cta" class="s-cta">
-
-            <div class="row row-x-center text-center">
-                <div class="column xl-8 lg-12">
-
-                    <div class="s-cta__content">
-                        <h2 class="text-display-title">
-                        Get started with a consultation today.
-                        </h2>
-                        <p class="lead">
-                            Let’s turn your vision into reality!
-                            Let’s explore how my expertise
-                             in cloud architecture, agile project management, and AI-driven solutions 
-                             can help you achieve your both business and personal success.
-                        </p>
-                        <a href="https://calendly.com/himanshu-jikadara/30min" target="_blank"  class="btn btn--primary">Unlock Expert Guidance</a>
-                        <div style="font-style: italic;font-size: 12px;">100% confidential strategy session.</div>
-                    </div>
-
-                </div>
+                <div class="absolute -bottom-24 -right-24 w-96 h-96 bg-indigo-600/10 blur-[100px] rounded-full"></div>
             </div>
-
-        </section> <!-- end s-cta -->
-
-
-        <!-- # footer 
-        ================================================== -->
-        <footer class="s-footer">
-            <div class="row s-footer__content">
-                <div class="column xl-6 lg-6 md-12 s-footer__block s-footer__about">                    
-                    <h3>About Himanshu</h3>
-                    <p>
-                        I am an AWS Certified Solutions Architect and Certified ScrumMaster® 
-                        with over 20 years of experience in system analysis, project management, 
-                        and web development. Currently based in Canada, I’ve collaborated with 
-                        clients across globe to deliver cutting-edge, 
-                        scalable AI-powered digital solutions. I specialize in leading agile-driven 
-                        technical projects, driving innovation, and ensuring seamless collaboration 
-                        for impactful business outcomes.
-                    </p>               
-                </div>                
-                <div class="column xl-3 lg-6 md-12 s-footer__block s-footer__site-links">
-                    <h3>Site Links</h3>
-                    <ul class="link-list">
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="services.html">Services</a></li>
-                        <!--li><a href="blog.html">Blog</a></li-->
-                        <li><a href="about.html">About</a></li>
-                        <li><a href="contact.html">Contact</a></li>
-                        
-                    </ul>
-                </div>
-                <div class="column xl-3 lg-6 md-12 tab-12 s-footer__block s-footer__newsletter">
-                    <h3>Need a mentor?</h3>
-
-                    <p>
-                        I offer mentorship to individuals and organizations, fostering growth and helping achieve long-term success.
-                    </p>
-
-                    <div class="subscribe-form">
-                        <a href="https://calendly.com/himanshu-jikadara/30min" target="_blank" class="btn btn--primary btn--big u-fullwidth">Book My 1-on-1</a>
-                        <div class="mc-status">No credit card. No ego. Just a chat.</div>
-                    </div>
-                </div>
-            </div>    
-            
-            <div class="row s-footer__bottom">
-                <div class="column xl-6 lg-12">
-                    <ul class="s-footer__social social-list">
-                        <li>
-                            <a href="https://x.com/hims_jikadara" target="_blank">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 16 16" style="fill:rgba(0, 0, 0, 1);"><path d="M12.6.75h2.454l-5.36 6.142L16 15.25h-4.937l-3.867-5.07-4.425 5.07H.316l5.733-6.57L0 .75h5.063l3.495 4.633L12.601.75Zm-.86 13.028h1.36L4.323 2.145H2.865z"></path></svg>
-                                <span class="u-screen-reader-text">X</span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="https://www.linkedin.com/in/himanshu-jikadara" target="_blank">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 16 16" style="fill: rgba(0, 0, 0, 1);"><path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854zm4.943 12.248V6.169H2.542v7.225zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248S2.4 3.226 2.4 3.934c0 .694.521 1.248 1.327 1.248zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016l.016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225z"></path></svg>
-                                <span class="u-screen-reader-text">LinkedIn</span>
-                            </a>
-                        </li>
-                    </ul> <!-- end s-footer__social -->
-                </div>
-                <div class="column xl-6 lg-12">
-                    <p class="ss-copyright">
-                        <span>© Copyright Himanshu Jikadara 2026.</span> 
-                        <span class="copyright">Design by <a target="_blank" href="https://www.styleshout.com/">StyleShout</a></span>
-                    </p>
-                </div>
-
-                <div class="ss-go-top">
-                    <a class="smoothscroll" title="Back to Top" href="#top">
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="36" height="36" fill="none" stroke="#ffffff" stroke-width="1" stroke-linecap="round" stroke-linejoin="round">&lt;!--!  Atomicons Free 1.00 by @atisalab License - https://atomicons.com/license/ (Icons: CC BY 4.0) Copyright 2021 Atomicons --&gt;<polyline points="17 11 12 6 7 11"></polyline><line x1="12" y1="18" x2="12" y2="6"></line></svg>
-                    </a>
-                </div> <!-- end ss-go-top -->
+        </section>
+        <div class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-8">
+            <div>
+                <div class="font-extrabold text-2xl tracking-tighter mb-2 uppercase">HIMANSHU<span class="text-indigo-500">.J</span></div>
+                <p class="text-gray-600 text-sm">Canada-Based • Global Delivery • Founder's Mindset</p>
             </div>
-            
-        </footer> <!-- end s-footer -->
-
-    </div> <!-- end page-wrap -->
-
-    <!-- Java Script
-    ================================================== -->
-    <script src="js/plugins.js"></script>
-    <script src="js/main.js"></script>
+            <div class="flex flex-wrap justify-center gap-8 text-sm font-bold text-gray-400">
+                <a href="https://www.linkedin.com/in/himanshu-jikadara" target="_blank" class="hover:text-white transition">LinkedIn</a>
+                <a href="https://x.com/hims_jikadara" target="_blank" class="hover:text-white transition">Twitter / X</a>
+                <a href="https://calendly.com/himanshu-jikadara/30min" target="_blank" class="text-indigo-500 animate-pulse uppercase">Claim Free 30-Min Call</a>
+            </div>
+        </div>
+        <p class="text-center text-gray-800 text-[9px] mt-20 uppercase tracking-[0.6em]">© 2026 Himanshu Jikadara. Engineered for the Next Era.</p>
+    </footer>
 
 </body>
 </html>
